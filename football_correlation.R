@@ -67,8 +67,8 @@ league_correlation <- function(csv_path, league_name,
 }
 
 league_correlation("data\\team_stats_mls_2025.csv","mls")
-league_correlation("data\\team_stats_nwsl_2025.csv","nwsl")
 league_correlation("data\\team_stats_bundesliga_2025-2026.csv","bundesliga")
 league_correlation("data\\team_stats_la_liga_2025-2026.csv","la_liga")
 league_correlation("data\\team_stats_premier_league_2025-2026.csv","premier_league")
 league_correlation("data\\team_stats_serie_a_2025-2026.csv","serie_a")
+league_correlation("data\\team_stats_ligue_1_2025-2026.csv","ligue_1")
