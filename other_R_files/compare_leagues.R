@@ -1,5 +1,6 @@
 #install.packages("dplyr")
 library(dplyr)
+list.files("output")
 
 #list all output files
 result_files <- list.files("output", pattern = "_correlation_results.csv", full.names = TRUE)
@@ -19,6 +20,7 @@ rownames(all_leagues) <- NULL
 # Filter out unwanted leagues:
 all_leagues <- all_leagues %>% filter(league != "mls")
 
+# Print out variance in R and p-value by stat
 stat_variability <- all_leagues %>%
   group_by(stat) %>%
   summarize(
@@ -26,11 +28,16 @@ stat_variability <- all_leagues %>%
     max_r  = max(pearson_r),
     range  = max_r - min_r,
     mean_r = mean(pearson_r),
-    mean_p = mean(pearson_p)
+    min_p  = min(pearson_p),
+    max_p  = max(pearson_p),
+    mean_p = mean(pearson_p),
   ) %>%
   arrange(desc(range))
 
-print(stat_variability, n = 30)
+# Write CSV of the table
+write.csv(stat_variability, 
+          file = paste0("output/team_stat_variability.csv"), 
+          row.names = FALSE)
 
 # Grab the top 5 most variable stats
 top_variable_stats <- stat_variability$stat[1:10]
