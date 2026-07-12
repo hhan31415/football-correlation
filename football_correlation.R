@@ -61,7 +61,7 @@ league_correlation <- function(csv_path, league_name,
   
   # output as csv file
   write.csv(results_table, 
-            file = paste0("output/", league_name, "_correlation_results.csv"), 
+            file = paste0("output/correlation_results/", league_name, "_correlation_results.csv"), 
             row.names = FALSE)
   return(results_table)
 }

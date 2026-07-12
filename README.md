@@ -15,6 +15,20 @@ We then want to compare these correlation numbers across various leagues to expl
 ## Computing Correlation
 
 ## Comparing Leagues
+Now that we have the correlation values for each statistic, we want to compare these values across leagues to see if there are any meaningful differences between the leagues. In particular, the following are some examples of interesting observations we may look for:
+- Statistics not directly connected to wins or goals which have a significant, high correlation across multiple leagues,
+- Stats which have high correlation and significant p-values in some leagues, but low correlation in others,
+- Stats which have positive correlation in some leagues but negative correlation in others.
+
+To do this, I combined all the previous csvs containing correlation data into one massive table grouping by stats, then computed various values like range of R values and average R values across the leagues. For example, the following is one output for the stat "Accurate crosses per match":
+```
+   stat                            min_r   max_r range  mean_r   min_p max_p mean_p
+   <chr>                           <dbl>   <dbl> <dbl>   <dbl>   <dbl> <dbl>  <dbl>
+   Accurate.long.balls.per.match -0.299   0.151  0.450 -0.0647 0.200   0.986 0.584 
+```
+which tells us that the stat "accurate crosses per match" has a great range of R values and has both positive and negative correlation across the 5 major leagues + the MLS.
+
+Of course, this itself still may not be all that interesting, if the correlation is not significant. Indeed, certain stats
 
 ## Average Possession
 
