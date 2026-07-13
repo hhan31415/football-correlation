@@ -83,16 +83,11 @@ In general, these thirtheen significant stats also have a generally strong corre
 The link to the relevant Tableau dashboard is [here](https://public.tableau.com/app/profile/heechan.han/viz/Top5LeaguesMLSCorrelationBetweenStatsandSuccess/StatsvsCorrelation1).
 
 ## Interesting Observations
-The visualizations give us a really good idea of the differences between the leagues, especially between the top leagues in Europe vs the MLS. Note that the first four stats (average possession, xG conceded, accurate passes per match, clearances per match) enjoy a strong correlation and significant p-value across the top 5 leagues, yet in the MLS, the correlation is moderate to weak, with a nonsignificant p-value. A few observations may help explain these differences. First, the level of play in the top 5 leagues is generally much higher compared to the MLS, and thus stat like average possession and accurate passes can more efficently be converted to on-pitch success. In the same light, conceding more xG or haveing more clearances (and thus defending much more often) is more likely to be punished against higher-skilled opposition. 
+The visualizations give us a really good idea of the differences between the leagues, especially between the top leagues in Europe vs the MLS. Note that the first four stats (average possession, xG conceded, accurate passes per match, clearances per match) enjoy a strong correlation and significant p-value across the top 5 leagues, yet in the MLS, the correlation is moderate to weak, with a nonsignificant p-value. A few observations may help explain these differences. First, the level of play in the top 5 leagues is generally much higher compared to the MLS, and thus stat like average possession and accurate passes can more efficently be converted to on-pitch success. In the same light, conceding more xG or having more clearances (and thus defending much more often) is more likely to be punished against higher-skilled opposition. 
 
 Another explanation may be given by the higher existence of parity between clubs at the highest levels of Europe. In these leagues, there are often a few giants (like Barcelona and Real Madrid for La Liga or Bayern Munich for the Bundesliga) which oftentimes are outliers which may contribute greatly to the overall correlation and significance of these data points. In contrast, the MLS is relatively much more balanced due to restrictions like the salary cap, and club performances between season tend to vary much more regularly. 
 
 I find it especially interesting how weak the correlation and high the p-value is for clearances per match for the MLS. Teams that don't boot away the ball more often are not that much more likely to have on-field success than those who clear the ball frequently. 
 
-## Average Possession
-
-## Clearances
-
-## Possession Won in the Final Third
 
 ## Conclusion
